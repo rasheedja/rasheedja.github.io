@@ -53,7 +53,7 @@
     {
       "company": "PRODA",
       "position": "Full Stack Engineer",
-      "location": "United Kingdom",
+	"location": "London, United Kingdom",
       "startDate": "March 2023",
       "endDate": "April 2025",
       "current": false,

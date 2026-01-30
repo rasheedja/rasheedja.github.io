@@ -311,6 +311,7 @@
       "year": "2022",
       "description": "We give a process for verifying numerical programs against their functional specifications. Our implementation is capable of automatically verifying programs against tight error bounds featuring common elementary functions. We demonstrate and evaluate our implementation on several examples, yielding the first fully verified SPARK implementations of the sine and square root functions.",
       "links": {
+        "journal": "https://link.springer.com/chapter/10.1007/978-3-031-17108-6_2",
         "arxiv": "https://arxiv.org/abs/2207.00921",
         "pdf": "https://arxiv.org/pdf/2207.00921"
       }

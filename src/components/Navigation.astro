@@ -1,0 +1,102 @@
+---
+import type { SectionTitles } from "../types";
+
+interface Props {
+  sectionTitles: SectionTitles;
+}
+
+const { sectionTitles } = Astro.props;
+
+const navItems = [
+  { href: "#experience", label: sectionTitles.experience },
+  { href: "#projects", label: sectionTitles.projects },
+  { href: "#publications", label: sectionTitles.publications },
+  { href: "#skills", label: sectionTitles.skills },
+  { href: "#education", label: sectionTitles.education },
+];
+---
+
+<nav
+  class="sticky top-0 z-50 border-b"
+  style="background-color: var(--color-bg); border-color: var(--color-border);"
+>
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-14 items-center justify-between">
+      <a
+        href="#"
+        class="text-lg font-semibold transition-colors hover:opacity-80"
+        style="color: var(--color-text);"
+      >
+        JR
+      </a>
+      <div class="hidden sm:flex sm:items-center sm:gap-6">
+        {
+          navItems.map((item) => (
+            <a
+              href={item.href}
+              class="text-sm font-medium transition-colors"
+              style="color: var(--color-text-secondary);"
+              onmouseover="this.style.color='var(--color-accent)'"
+              onmouseout="this.style.color='var(--color-text-secondary)'"
+            >
+              {item.label}
+            </a>
+          ))
+        }
+      </div>
+      <!-- Mobile menu button -->
+      <button
+        type="button"
+        id="mobile-menu-button"
+        class="sm:hidden p-2 rounded-md"
+        style="color: var(--color-text-secondary);"
+        aria-label="Open menu"
+      >
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden sm:hidden pb-4">
+      <div class="flex flex-col gap-2">
+        {
+          navItems.map((item) => (
+            <a
+              href={item.href}
+              class="mobile-nav-link block px-3 py-2 text-sm font-medium rounded-md transition-colors"
+              style="color: var(--color-text-secondary);"
+            >
+              {item.label}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const button = document.getElementById("mobile-menu-button");
+  const menu = document.getElementById("mobile-menu");
+
+  button?.addEventListener("click", () => {
+    menu?.classList.toggle("hidden");
+  });
+
+  // Close menu when clicking a link
+  document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu?.classList.add("hidden");
+    });
+  });
+</script>

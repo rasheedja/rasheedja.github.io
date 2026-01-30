@@ -1,0 +1,46 @@
+---
+import type { SkillCategory } from "../types";
+
+interface Props {
+  skills: SkillCategory[];
+  title: string;
+}
+
+const { skills, title } = Astro.props;
+---
+
+<section id="skills" class="py-16 scroll-mt-16">
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <h2
+      class="text-2xl font-bold tracking-tight sm:text-3xl"
+      style="color: var(--color-text);"
+    >
+      {title}
+    </h2>
+    <div class="mt-10 space-y-8">
+      {
+        skills.map((category) => (
+          <div>
+            <h3
+              class="text-sm font-semibold uppercase tracking-wide"
+              style="color: var(--color-text-muted);"
+            >
+              {category.category}
+            </h3>
+            <div class="mt-3 flex flex-wrap gap-2">
+              {category.items.map((skill) => (
+                <span
+                  class="group relative inline-flex items-center rounded-full px-3 py-1.5 text-sm font-medium cursor-default"
+                  style="background-color: var(--color-bg-secondary); color: var(--color-text); border: 1px solid var(--color-border);"
+                  title={skill.description}
+                >
+                  {skill.name}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

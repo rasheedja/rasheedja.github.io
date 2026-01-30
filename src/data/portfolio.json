@@ -1,0 +1,319 @@
+{
+  "sectionTitles": {
+    "experience": "Experience",
+    "projects": "Projects",
+    "publications": "Publications",
+    "skills": "Skills",
+    "education": "Education"
+  },
+  "basics": {
+    "name": "Junaid Rasheed",
+    "label": "Software Engineer",
+    "summary": "Software Engineer at IOHK building the future of decentralized finance on Cardano. I specialize in Haskell and TypeScript, with deep experience in blockchain protocols, property-based testing, and formal verification. Previously led engineering teams at PRODA, delivering high-impact systems that drove measurable business outcomes. PhD in Computer Science with published research on automated verification of floating-point programs.",
+    "email": "jrasheed178@gmail.com",
+    "phone": "+44 77 414 85386",
+    "location": "United Kingdom",
+    "profiles": {
+      "github": {
+        "url": "https://github.com/rasheedja",
+        "username": "rasheedja"
+      },
+      "linkedin": {
+        "url": "https://linkedin.com/in/jrasheed",
+        "username": "jrasheed"
+      }
+    }
+  },
+  "work": [
+    {
+      "company": "IOHK",
+      "position": "Software Engineer",
+      "location": "United Kingdom",
+      "startDate": "July 2025",
+      "endDate": "Present",
+      "current": true,
+      "highlights": [
+        "Led significant improvements to the testing strategy for the DJED stablecoin, implementing a comprehensive suite of property-based tests designed to attack the protocol across hundreds of scenarios with precise on-chain failure assertions.",
+        "Implemented cross-network bridging functionality for an upcoming Cardano project, enabling assets to be securely bridged from external chains into the Cardano ecosystem to reduce user friction and support increased liquidity and TVL.",
+        "Implemented an EVM-based stablecoin (including an ERC-4626-compliant implementation) and the supporting indexing infrastructure, including technology selection, data model design, and infrastructure setup for activity tracking and reward attribution."
+      ]
+    },
+    {
+      "company": "PRODA",
+      "position": "Engineering Lead",
+      "location": "London, United Kingdom",
+      "startDate": "April 2025",
+      "endDate": "July 2025",
+      "current": false,
+      "highlights": [
+        "Tech Lead for the ingestion team, managed agile processes, provided status reports to executives, and drove strategic direction while maintaining significant hands-on technical contributions.",
+        "Managed team members from junior to senior levels, giving regular one-to-one meetings and performance reviews, driving improvements across cross-functional teams."
+      ]
+    },
+    {
+      "company": "PRODA",
+      "position": "Full Stack Engineer",
+      "location": "United Kingdom",
+      "startDate": "March 2023",
+      "endDate": "April 2025",
+      "current": false,
+      "highlights": [
+        "Designed and implemented automated OpenAPI spec generators for our Haskell monolith, reducing lead times from 6–7 days to 3–4 days for new TypeScript teams. This work directly contributed to the creation of several high-impact TypeScript services, generating new sales opportunities and increasing ARR.",
+        "Developed an automated versioning and publishing system for our generated specs that integrates with our CI/CD pipelines, ensuring seamless deployments and consistency across services.",
+        "Spearheaded a scalable greenfield TypeScript project to replace an outdated ETL automation system. Reduced processing times from 5 minutes to 1 minute, with around 30% of all data uploads now processed by the new service. Reliability improved significantly, reducing the failure rate to less than 1%.",
+        "Built a robust SFTP-based ingestion service using GCP (with GCS for storage and a TypeScript Cloud Run function) deployed via Terraform and GitHub Actions. Collaborated closely with Business Analysts, product managers, and clients.",
+        "Implemented k6 load testing with TypeScript to automate testing of our main Haskell service. Identified performance bottlenecks, leading to a 10–20% reduction in ingestion times and enabling a 240% increase in data throughput."
+      ]
+    },
+    {
+      "company": "Aston University",
+      "position": "Computer Science Teaching Assistant",
+      "location": "United Kingdom",
+      "startDate": "January 2018",
+      "endDate": "December 2022",
+      "current": false,
+      "highlights": [
+        "Delivered tutorials and marked exam papers for 'Programming Language Concepts' and 'Data Structures and Algorithms' modules over 5 years.",
+        "Led tutorials for 'Software Project Management' and 'Multi-Agent Systems' modules for 2 years."
+      ]
+    },
+    {
+      "company": "Mobile Fun / magic42",
+      "position": "Web Developer",
+      "location": "United Kingdom",
+      "startDate": "July 2016",
+      "endDate": "June 2018",
+      "current": false,
+      "highlights": [
+        "Developed and maintained Magento websites for Mobile Fun and magic42 clients.",
+        "Implemented Jenkins and Puppet scripts for automatic deployment, continuous integration, and backup of Magento websites.",
+        "Worked full-time during placement year (July 2016 – September 2017) and part-time during final year of undergraduate degree (October 2017 – June 2018)."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Aston University",
+      "area": "Computer Science",
+      "studyType": "PhD",
+      "startDate": "October 2018",
+      "endDate": "March 2023",
+      "location": "United Kingdom",
+      "description": "Sponsored by AdaCore. Thesis titled \"Automatic Numerical Proving for Auto-active Verification of Floating-Point Programs\". Developed performant novel methods for automatic numerical solving, implemented in LPPaver and PropaFP."
+    },
+    {
+      "institution": "Aston University",
+      "area": "Computer Science",
+      "studyType": "BSc",
+      "startDate": "October 2014",
+      "endDate": "July 2018",
+      "location": "United Kingdom",
+      "grade": "First Class (83%)",
+      "description": "Received the Best Student Award for the highest performance among my cohort in the final year."
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        {
+          "name": "Haskell",
+          "description": "3+ years professional experience, 5+ years academic experience"
+        },
+        {
+          "name": "TypeScript",
+          "description": "3+ years professional experience on both frontend and backend"
+        },
+        {
+          "name": "JavaScript",
+          "description": "5+ years professional experience"
+        },
+        {
+          "name": "Python",
+          "description": "Preferred scripting language"
+        },
+        {
+          "name": "C#",
+          "description": "Unity game development projects"
+        }
+      ]
+    },
+    {
+      "category": "Backend & DevOps",
+      "items": [
+        {
+          "name": "GCP",
+          "description": "Cloud Run, GCS, PubSub, Cloud Functions"
+        },
+        {
+          "name": "Terraform",
+          "description": "Infrastructure as Code"
+        },
+        {
+          "name": "Kubernetes",
+          "description": "Container orchestration"
+        },
+        {
+          "name": "Docker",
+          "description": "Containerization"
+        },
+        {
+          "name": "CI/CD",
+          "description": "GitHub Actions, Jenkins"
+        },
+        {
+          "name": "Datadog",
+          "description": "Observability and monitoring"
+        }
+      ]
+    },
+    {
+      "category": "Expertise",
+      "items": [
+        {
+          "name": "Functional Programming",
+          "description": "Proficient with Haskell, maintain multiple open-source projects"
+        },
+        {
+          "name": "Blockchain Development",
+          "description": "Cardano ecosystem, EVM, stablecoins, cross-chain bridging"
+        },
+        {
+          "name": "Event-Driven Architecture",
+          "description": "PubSub, Google Cloud events"
+        },
+        {
+          "name": "Formal Verification",
+          "description": "Floating-point program verification, property-based testing"
+        },
+        {
+          "name": "Full Stack Development",
+          "description": "4+ years professional experience"
+        },
+        {
+          "name": "Software Design",
+          "description": "Greenfield project architecture and implementation"
+        }
+      ]
+    },
+    {
+      "category": "Leadership",
+      "items": [
+        {
+          "name": "Team Management",
+          "description": "Managed engineers from junior to senior levels"
+        },
+        {
+          "name": "Agile Scrum",
+          "description": "Led multiple Agile Scrum teams"
+        },
+        {
+          "name": "Project Management",
+          "description": "Backlog management and roadmap planning"
+        },
+        {
+          "name": "Mentorship",
+          "description": "Experienced mentoring engineers of all levels"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "PropaFP",
+      "description": "A state-of-the-art tool for auto-active verification of floating-point programs. Uses a novel process combining symbolic simplifications, interval arithmetic, and nonlinear real provers to verify numerical programs against tight error bounds.",
+      "url": "https://github.com/rasheedja/PropaFP",
+      "language": "Haskell",
+      "stars": 8,
+      "role": "author",
+      "topics": [
+        "formal-methods",
+        "floating-point",
+        "verification",
+        "mathematics"
+      ]
+    },
+    {
+      "name": "simplex-method",
+      "description": "A Haskell library implementing the two-phase simplex method in exact rational arithmetic. Currently being refactored to enhance performance, code quality, and extensibility.",
+      "url": "https://github.com/rasheedja/simplex-method",
+      "language": "Haskell",
+      "stars": 6,
+      "role": "author",
+      "topics": ["optimization", "linear-programming", "mathematics", "haskell"]
+    },
+    {
+      "name": "LPPaver",
+      "description": "An automated prover targeting problems that involve nonlinear real arithmetic. Implements novel algorithms using numerical methods and is comparable to state-of-the-art provers.",
+      "url": "https://github.com/rasheedja/LPPaver",
+      "language": "Haskell",
+      "stars": 5,
+      "role": "author",
+      "topics": [
+        "theorem-proving",
+        "formal-methods",
+        "verification",
+        "mathematics"
+      ]
+    },
+    {
+      "name": "sc-tools",
+      "description": "A collection of Haskell libraries for building Cardano applications. Includes coin selection, transaction balancing, a minimal wallet implementation, mockchain for testing, and a CLI tool for transaction analysis.",
+      "url": "https://github.com/j-mueller/sc-tools",
+      "language": "Haskell",
+      "stars": 18,
+      "role": "contributor",
+      "topics": [
+        "cardano",
+        "cardano-api",
+        "coin-selection",
+        "transaction-balancing",
+        "haskell",
+        "blockchain"
+      ]
+    },
+    {
+      "name": "aern2",
+      "description": "A Haskell library for Approximating Exact Real Numbers (AERN) based on interval computation. Provides arbitrary-precision real number arithmetic with guaranteed error bounds.",
+      "url": "https://github.com/michalkonecny/aern2",
+      "language": "Haskell",
+      "stars": 23,
+      "role": "contributor",
+      "topics": ["exact-real-arithmetic", "interval-arithmetic", "haskell"]
+    },
+    {
+      "name": "exact-function-plotter",
+      "description": "An exact-real function plotter in the browser. Visualizes mathematical functions with guaranteed precision using exact real arithmetic.",
+      "url": "https://github.com/michalkonecny/exact-function-plotter",
+      "language": "Haskell",
+      "stars": 1,
+      "role": "contributor",
+      "topics": ["visualization", "exact-real-arithmetic", "haskell"]
+    }
+  ],
+  "publications": [
+    {
+      "type": "thesis",
+      "title": "Automatic Numerical Proving for Auto-active Verification of Floating-Point Programs",
+      "authors": ["Junaid Rasheed"],
+      "venue": "PhD Thesis, Aston University",
+      "year": "2022",
+      "description": "Developed novel methods for automatic numerical proving and auto-active verification of floating-point programs. The research produced two open-source tools: LPPaver for automated proving of nonlinear real arithmetic, and PropaFP for verification of floating-point programs.",
+      "links": {
+        "pdf": "https://publications.aston.ac.uk/id/eprint/44692/1/RASHEED_JUNAID_ALI_2022.pdf"
+      }
+    },
+    {
+      "type": "paper",
+      "title": "Auto-active Verification of Floating-point Programs via Nonlinear Real Provers",
+      "authors": ["Junaid Rasheed", "Michal Konečný"],
+      "venue": "SEFM 2022 - Software Engineering and Formal Methods",
+      "year": "2022",
+      "description": "We give a process for verifying numerical programs against their functional specifications. Our implementation is capable of automatically verifying programs against tight error bounds featuring common elementary functions. We demonstrate and evaluate our implementation on several examples, yielding the first fully verified SPARK implementations of the sine and square root functions.",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2207.00921",
+        "pdf": "https://arxiv.org/pdf/2207.00921"
+      }
+    }
+  ]
+}

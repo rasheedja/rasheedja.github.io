@@ -1,0 +1,70 @@
+---
+import type { Education as EducationType } from "../types";
+
+interface Props {
+  education: EducationType[];
+  title: string;
+}
+
+const { education, title } = Astro.props;
+---
+
+<section id="education" class="py-16 scroll-mt-16">
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <h2
+      class="text-2xl font-bold tracking-tight sm:text-3xl"
+      style="color: var(--color-text);"
+    >
+      {title}
+    </h2>
+    <div class="mt-10 space-y-8">
+      {
+        education.map((edu) => (
+          <article
+            class="rounded-lg p-5"
+            style="background-color: var(--color-bg-secondary); border: 1px solid var(--color-border);"
+          >
+            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-4">
+              <div>
+                <h3
+                  class="text-lg font-semibold"
+                  style="color: var(--color-text);"
+                >
+                  {edu.studyType} in {edu.area}
+                </h3>
+                <p
+                  class="text-base font-medium"
+                  style="color: var(--color-accent);"
+                >
+                  {edu.institution}
+                </p>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <p
+                  class="text-sm font-medium"
+                  style="color: var(--color-text-muted);"
+                >
+                  {edu.startDate} – {edu.endDate}
+                </p>
+                {edu.grade && (
+                  <p
+                    class="text-sm font-medium"
+                    style="color: var(--color-accent);"
+                  >
+                    {edu.grade}
+                  </p>
+                )}
+              </div>
+            </div>
+            <p
+              class="mt-3 text-sm leading-relaxed"
+              style="color: var(--color-text-secondary);"
+            >
+              {edu.description}
+            </p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

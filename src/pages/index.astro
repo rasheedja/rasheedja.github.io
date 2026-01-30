@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Hero from "../components/Hero.astro";
+import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
+import Publications from "../components/Publications.astro";
+import Skills from "../components/Skills.astro";
+import Education from "../components/Education.astro";
+import Footer from "../components/Footer.astro";
+import type { Portfolio } from "../types";
+
+import portfolioData from "../data/portfolio.json";
+
+const data = portfolioData as Portfolio;
+---
+
+<Layout
+  title={`${data.basics.name} - ${data.basics.label}`}
+  description={data.basics.summary}
+>
+  <Navigation sectionTitles={data.sectionTitles} />
+  <main>
+    <Hero basics={data.basics} />
+    <Experience jobs={data.work} title={data.sectionTitles.experience} />
+    <Projects projects={data.projects} title={data.sectionTitles.projects} />
+    <Publications
+      publications={data.publications}
+      title={data.sectionTitles.publications}
+    />
+    <Skills skills={data.skills} title={data.sectionTitles.skills} />
+    <Education
+      education={data.education}
+      title={data.sectionTitles.education}
+    />
+  </main>
+  <Footer basics={data.basics} />
+</Layout>

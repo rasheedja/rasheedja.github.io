@@ -1,0 +1,66 @@
+---
+import type { Job } from "../types";
+
+interface Props {
+  jobs: Job[];
+  title: string;
+}
+
+const { jobs, title } = Astro.props;
+---
+
+<section id="experience" class="py-16 scroll-mt-16">
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <h2
+      class="text-2xl font-bold tracking-tight sm:text-3xl"
+      style="color: var(--color-text);"
+    >
+      {title}
+    </h2>
+    <div class="mt-10 space-y-12">
+      {
+        jobs.map((job) => (
+          <article class="relative">
+            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-4">
+              <div>
+                <h3
+                  class="text-lg font-semibold"
+                  style="color: var(--color-text);"
+                >
+                  {job.position}
+                </h3>
+                <p
+                  class="text-base font-medium"
+                  style="color: var(--color-accent);"
+                >
+                  {job.company}
+                </p>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <p
+                  class="text-sm font-medium"
+                  style="color: var(--color-text-muted);"
+                >
+                  {job.startDate} – {job.endDate}
+                </p>
+                <p class="text-sm" style="color: var(--color-text-muted);">
+                  {job.location}
+                </p>
+              </div>
+            </div>
+            <ul class="mt-4 space-y-2">
+              {job.highlights.map((highlight) => (
+                <li
+                  class="text-sm leading-relaxed pl-4 relative before:content-['•'] before:absolute before:left-0"
+                  style="color: var(--color-text-secondary); --tw-before-color: var(--color-accent);"
+                >
+                  {highlight}
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -61,6 +61,7 @@ export interface PublicationLinks {
   pdf?: string;
   arxiv?: string;
   doi?: string;
+  journal?: string;
 }
 
 export interface Publication {

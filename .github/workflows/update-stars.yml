@@ -29,6 +29,9 @@ jobs:
       - name: Update star counts
         run: npm run update-stars
 
+      - name: Run formatter
+        run: npm run format
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
